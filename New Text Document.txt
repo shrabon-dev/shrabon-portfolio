@@ -1,0 +1,53 @@
+https://preview.themeforest.net/item/propus-web-designer-portfolio-elementor-template-kit/full_screen_preview/30585489?_ga=2.3404468.561122634.1644556104-1855969792.1639845952
+
+
+
+https://preview.themeforest.net/item/lendex-personal-portfolio-bootstrap-5-template/full_screen_preview/31542002?_ga=2.3404468.561122634.1644556104-1855969792.1639845952
+
+
+
+
+
+
+font-family: 'Cormorant Garamond', serif;
+
+border: 1px solid #3b3d49;
+-webkit-transition: all .5s ease;
+transition: all .5s ease;
+
+ font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 600;
+
+
+    .banner__shape{
+    width: 600px;
+    height: 600px;
+    border: 1px solid #6B6D7B;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.banner__shape::after{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #353743;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    content: "";
+}
