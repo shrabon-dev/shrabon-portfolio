@@ -99,15 +99,17 @@
 
 
 
-    $(".port__slider").slick({
-        dots:true,
+ $(".testi__slider").slick({
+        dots:false,
         infinite: true,
         autoplay: true,
-        arrows: false,
+        arrows: true,
         autoplaySpeed: 1000,
         speed: 1300,
-        slidesToShow: 5,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        prevArrow:'<i class="fas fa-arrow-right next"></i>',
+        nextArrow:'<i class="fas fa-arrow-left prev"></i>',
         responsive: [
             {
                 breakpoint: 1024,

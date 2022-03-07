@@ -1,0 +1,32 @@
+@media (min-width:320px) and (max-width:575px) {
+    .side__menu{
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+    }
+    .d-flex{
+        justify-content: space-around;
+    }
+    .side__menu .logo .pfl__img{
+        width: auto;
+    }
+    .side__menu .logo h2{
+        font-size: 14px;
+    }
+    .menu__bar{
+        background: #252734;
+    }
+    .side__menu ul{
+       margin-top: 10px;
+       padding-left: 10px;
+    }
+    .side__menu ul li{
+        display: inline-block;
+        padding-left: 0;
+    }
+    .side__menu ul li a{
+        display: inline-block;
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}

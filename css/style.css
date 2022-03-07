@@ -578,7 +578,116 @@ button:focus {
     position: relative;
     z-index: 1;
 }
+/* 5.-------------------------------------------
+                    Skill Section
+-----------------------------------------------*/
+#resume__section{
+    padding: 80px 0;
+}
+#resume__section .title h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 58px;
+    font-weight: 200;
+    color: #c4c4c4;
+    text-align: center;
+}
+#resume__section .title h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #c4c4c4;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+#resume__section h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #ebebeb;
+    margin-bottom: 50px;
+    margin-top: 20px;
 
+}
+#resume__section .h3_2{
+    text-align: right;
+}
+#resume__section .resume__card{
+    border: 1px solid #1f2022;
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#resume__section .resume__card:hover{
+    border-color: #14FFEC;
+}
+#resume__section .resume__card::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    background: #272a2e;
+    box-shadow: inset 0 0 1px 0 #000000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    content: "";
+    z-index: 1;
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+}
+#resume__section .resume__card:hover:after{
+    background: #14FFEC;
+
+}
+#resume__section .resume__card span{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 14px;
+    border: 1px solid #1a1a1a;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: inset 0 0 4px 0 #000000;
+    background: #212428;
+}
+#resume__section .resume__card h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 15px 0;
+}
+#resume__section .resume__card h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #14FFEC;
+    margin-bottom: 8px;
+}
 /* 5.-------------------------------------------
                     Services Section
 -----------------------------------------------*/
@@ -587,8 +696,8 @@ button:focus {
 }
 #services__section .svc{
     margin-bottom: 50px;
-    height: 276px;
-    padding: 10px;
+    height: 240px;
+    padding: 15px;
     transition: .4s;
     -webkit-transition: .4s;
     -moz-transition: .4s;
@@ -607,10 +716,10 @@ button:focus {
 }
 #services__section .svc .svc-txt h6{
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 400;
     color: #eeeeee;
-    margin-top: 10px;
+    margin-top: 18px;
     line-height: 1.5;
    
 }
@@ -618,7 +727,7 @@ button:focus {
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    background:  linear-gradient(-66deg,#5a5e75,#57596b);
+    background: #30323f;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -628,14 +737,14 @@ button:focus {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 8px;
     /* transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg); */
-    opacity: 0;
+    opacity: 1;
     transition: .4s;
     -webkit-transition: .4s;
     -moz-transition: .4s;
@@ -656,14 +765,15 @@ button:focus {
 }
 #services__section .svc:hover .svc-txt a{
     opacity: 1;
+    background:  linear-gradient(-66deg,#5a5e75,#57596b);
 }
 #services__section .svc .svc-txt a:hover i{
   color: #E0A69C;
   font-size: 18px;
 }
 #services__section .svc .svc-img{
-   width: 100%;
-   height: 150px;
+   width: 40%;
+   height: 70px;
    overflow: hidden;
    transform: scale(1);
    -webkit-transform: scale(1);
@@ -681,13 +791,7 @@ button:focus {
     -ms-transition: .4s all ease-in-out;
     -o-transition: .4s all ease-in-out;
 }
-#services__section .svc:hover .svc-img img{
-    transform:rotate(10deg) scale(1.5);
-    -webkit-transform:rotate(10deg) scale(1.5);
-    -moz-transform:rotate(10deg) scale(1.5);
-    -ms-transform:rotate(10deg) scale(1.5);
-    -o-transform:rotate(10deg) scale(1.5);
-}
+
 #services__section .service{
     text-align: center;
     padding: 25px 5px;
@@ -813,16 +917,16 @@ button:focus {
     padding: 80px 0;
     margin-bottom: 50px;
 }
-#portfolio__section .port__title{
+ #portfolio__section .port__title{
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     font-size: 58px;
-    font-weight: 400;
-    color: #ffffff;
-    padding-bottom: 90px;
-    position: relative;
+    font-weight: 200;
+    color: #c4c4c4;
+    text-align: center;
+    padding-bottom: 20px;
+
 }
-#portfolio__section .port__title::after{
+/* #portfolio__section .port__title::after{
     position: absolute;
     bottom: 15px;
     left: 50%;
@@ -832,7 +936,7 @@ button:focus {
     -ms-transform: translateX(-50%) rotate(90deg);
     -o-transform: translateX(-50%) rotate(90deg);
     content: url(../images/shape.png);
-}
+} */
 #portfolio__section .nabs__tabs ul{
     text-align: center;
     border-top: 1px solid #424242;
@@ -861,7 +965,7 @@ button:focus {
 }
 #portfolio__section .nabs__tabs ul  li:first-child{
     border-left: 1px solid #424242;
-}
+} 
 #portfolio__section .port__div{
     width: 100%;
     height: 420px;
@@ -1028,49 +1132,45 @@ button:focus {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #e7e7e7 !important;
+    color: #000000 !important;
     background:  linear-gradient(48deg,#0099ff,#14FFEC);
     padding: 14px 0;
     border: none;
-    margin-top: 15px;
+    margin-top: 20px;
     position: relative;
     box-shadow: 0 0 6px 0px #1f202071;
+    z-index: 1;
+    overflow: hidden;
 }
 .button button::after{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#14FFEC,#0099ff);
-  content: "Send Message";
-  color: #e7e7e7;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(55deg,#14FFEC,#0099ff);
+  content: "";
   transition: .8s;
   -webkit-transition: .8s;
   -moz-transition: .8s;
   -ms-transition: .8s;
   -o-transition: .8s;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  z-index: -1;
 }
 .button button:hover:after{
-  transform: perspective(600px) rotate(360deg);
-  -webkit-transform: perspective(600px) rotate(360deg);
-  -moz-transform: perspective(600px) rotate(360deg);
-  -ms-transform: perspective(600px) rotate(360deg);
-  -o-transform: perspective(600px) rotate(360deg);
-  opacity: 0;
+left: -60px;
 }
 input:focus,textarea:focus{
     outline: none;
     box-shadow: none;
 }
 .milston__right{
-    padding: 80px 20px;
+    padding: 80px 20px 40px;
     /* background: linear-gradient(#0D7377;,#b11050); */
     background: url(../images/getintouch/Get-in-touch-1.jpg)no-repeat center;
     background-size: cover;
@@ -1118,23 +1218,30 @@ input:focus,textarea:focus{
                     testimonial Section
 -----------------------------------------------*/
 .testimonial-section{
-    padding: 100px 0;
+    padding: 50px 0 100px 0;
 }
 .testimonial-section .testimonial{
-    width: 600px;
-    background: #1a1b22;
-    /* border: 1px solid #0099ff; */
+    background: #2A2C39;
+    border: 1px solid transparent;
     margin: auto;
     position: relative;
     padding: 25px;
     padding-top: 60px;
     text-align: center;
+    transition: .4s all ease;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
 
+}
+.testimonial-section .testimonial:hover{
+    border-color: #0099ff;
 }
 .testimonial-section .testimonial .img{
     width: 120px;
     height: 120px;
-    border: 10px solid #1a1b22;
+    border: 10px solid #2A2C39;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1148,6 +1255,14 @@ input:focus,textarea:focus{
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
+    transition: .4s all ease;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
+}
+.testimonial-section .testimonial:hover .img{
+    border-color: #0099ff;
 }
 .testimonial-section .testimonial .img img{
     width: 100%;
@@ -1159,6 +1274,13 @@ input:focus,textarea:focus{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.testi__slider .slick-list{
+    padding-top: 70px;
+
+}
+.testi__slider .div{
+    margin-right: 10px;
+}
 .testimonial-section .testimonial h3{
     margin-bottom: 5px;
 }
@@ -1168,6 +1290,25 @@ input:focus,textarea:focus{
    padding: 0;
    margin: -2px;
    
+}
+.testimonial-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 58px;
+    font-weight: 200;
+    color: #c4c4c4;
+    text-align: center;
+    padding-bottom: 90px;
+    margin-top: 50px;
+}
+.testimonial-section h1 span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #e7e7e7 !important;
+    display: block;
+    width: 600px;
+    margin: 10px auto;
+    line-height: 1.5;
 }
 .testimonial-section .testimonial h4{
     font-family: 'Poppins', sans-serif;
@@ -1188,6 +1329,43 @@ input:focus,textarea:focus{
     font-weight: 300;
     color: #e7e7e7 !important;
 }
+.testimonial-section .next{
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    bottom: -100px;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #14FFEC;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .4s;
+}
+.testimonial-section .prev{
+    font-size: 24px;
+    color: #ffffff;
+    position: absolute;
+    bottom: -100px;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    border: 1px solid #14FFEC;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .4s;
+}
+.testimonial-section .next:hover,
+.testimonial-section .prev:hover{
+  border-color: transparent;
+  background: #14FFEC;
+}
 /* 9.-------------------------------------------
                     footer Section
 -----------------------------------------------*/
@@ -1196,12 +1374,34 @@ footer{
     background: #2A2C39;
 
 }
-footer .shrabon{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 32px;
+footer .text__ftr{
+     text-align: center;
+}
+footer .text__ftr h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    color: #ffffff !important;
+    margin-bottom: 15px;
+}
+footer .text__ftr p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #ffffff !important;
+    margin-bottom: 15px;
+    padding: 0 80px;
+}
+footer .text__ftr a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
     font-weight: 400;
-    color: #e7e7e7 !important;
-    padding-bottom: 25px;
+    color: #202020 !important;
+    margin-bottom: 55px;
+    background: #14FFEC;
+    width: 100px;
+    padding: 5px 0;
+
 }
 footer h2{
     font-family: 'Cormorant Garamond', serif;
@@ -1211,6 +1411,9 @@ footer h2{
     margin-top: 15px;
     padding-bottom: 25px;
 
+}
+footer ul li{
+    display: inline-block !important;
 }
 footer .ul1 li a{
     display: inline-flex;
@@ -1222,6 +1425,7 @@ footer .ul1 li a{
     transition: .4s;
     align-items: center;
     justify-content: space-between;
+    margin-right: 20px;
 }
 footer .ul1 li a i{
     display: inline-block;
@@ -1239,19 +1443,32 @@ footer .ul1 li a:hover{
     padding-left: 15px;
     color: #f0f0f0 !important;
 }
+footer .ul2{
+    text-align: right;
+}
 
 footer .ul2 li a{
     display: inline-block;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 300;
-    color: #0091ff !important;
+    color: #14FFEC !important;
     margin-bottom: 10px;
     transition: .4s;
-    border: 1px solid #14FFEC;;
+    border: 1px solid #14FFEC;
     width: 40px;
     height: 40px;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
+    transition: .4s all ease;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
+    margin-left: 25px;
+}
+footer .ul2 li a:hover{
+    color: #000000 !important;
+    background: #14FFEC;
 }
