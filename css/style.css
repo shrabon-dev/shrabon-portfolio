@@ -177,6 +177,9 @@ button:focus {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+.side__menu .logo span{
+    display: none;
+}
 .side__menu .logo .pfl__img::after{
     width: 120%;
     height: 120%;

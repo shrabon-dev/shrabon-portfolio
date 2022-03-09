@@ -166,7 +166,7 @@
     
 
     $(".dropdown__menu").click(function(){
-        $(".sub__drop__menu").slideToggle(200)
+        $(".sub__drop__menu").fadeToggle()
     })
     new VenoBox({
         selector: ".my-link"
@@ -232,3 +232,8 @@
             });
         };
     })( jQuery );
+
+
+    $('.bar__opt').click(function(){
+         $('.none__menu__bar').toggleClass('active__menu__bar');
+    })
