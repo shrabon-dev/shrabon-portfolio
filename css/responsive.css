@@ -145,4 +145,21 @@
     #portfolio__section .nabs__tabs ul li{
         font-size: 22px;
     }
+    .testimonial-section h1{
+       font-size: 40px;
+    }
+    .testimonial-section h1 span{
+        width: auto;
+    }
+    #getintouch__section .get__in__touch p{
+        font-size: 16px;
+    }
+    #getintouch__section .get__in__touch input,
+    #getintouch__section .get__in__touch textarea{
+        width: 260px;
+    }
+    footer .text__ftr p{
+        padding: 0 0;
+    }
+
 }
