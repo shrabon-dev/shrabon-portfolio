@@ -1,3 +1,4 @@
+/* ---------------------- mobile device ------------------------ */
 @media(min-width:320px) and (max-width: 575px) {
     .side__menu{
         width: 100vw;
@@ -120,6 +121,173 @@
     #banner__section .banner__text p::after {
         bottom: -94px;
     }
+
+    /* about part */
+    #about__section .about__text h6{
+        font-size: 20px;
+    }
+    #about__section .about__text h4{
+        font-size: 24px;
+    }
+    .abt__p p{
+        margin-top: 45px;
+    }
+    #resume__section .title h1{
+        font-size: 40px;
+    }
+    #services__section h5{
+        font-size: 40px;
+        margin-top: 0;
+        padding-bottom: 40px;
+    }
+    #services__section .service{
+        margin-bottom: 30px;
+    }
+    #portfolio__section .nabs__tabs ul li{
+        font-size: 22px;
+    }
+    .testimonial-section h1{
+       font-size: 40px;
+    }
+    .testimonial-section h1 span{
+        width: auto;
+    }
+    #getintouch__section .get__in__touch p{
+        font-size: 16px;
+    }
+    #getintouch__section .get__in__touch input,
+    #getintouch__section .get__in__touch textarea{
+        width: 260px;
+    }
+    footer .text__ftr p{
+        padding: 0 0;
+    }
+
+}
+
+/* ---------------------- Tablet device ------------------------ */
+@media(min-width:576px) and (max-width: 767px) {
+    .side__menu{
+        width: 100vw;
+        height: auto;
+        padding-top: 0px;
+        padding-bottom: 0;
+        background: transparent !important;
+        z-index: 10000;
+    }
+    .d-flex{
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+    .side__menu .logo{
+        background: #353743;
+    }
+    .side__menu .logo .pfl__img{
+        width: auto;
+    }
+    .side__menu .logo h2{
+        font-size: 14px;
+    }
+    .side__menu .logo span{
+        display: inline-block;
+       text-align: right;
+       width: 10%;
+       cursor: pointer;
+    }
+    .side__menu .logo span img{
+       width: 70%;
+    }
+    .menu__bar{
+        position: relative;
+    }
+    .none__menu__bar{
+        position: absolute;
+        top: 0;
+        left: -200px;
+        transition: .6s all ease-in-out;
+        -webkit-transition: .6s all ease-in-out;
+        -moz-transition: .6s all ease-in-out;
+        -ms-transition: .6s all ease-in-out;
+        -o-transition: .6s all ease-in-out;
+    
+    }
+    .active__menu__bar{
+        left: 0 !important;
+        transition: .6s all ease-in-out;
+        -webkit-transition: .6s all ease-in-out;
+        -moz-transition: .6s all ease-in-out;
+        -ms-transition: .6s all ease-in-out;
+        -o-transition: .6s all ease-in-out;
+}
+    .side__menu ul{
+       margin-top: 0px;
+       padding:0 10px;
+       display: inline-block;
+       background: #353743;
+    }
+    .side__menu ul li{
+        background: transparent;
+        border: none;
+        padding-left: 0;
+        margin-top: 10px;
+
+    }
+    .side__menu ul li a{
+        display: inline-block;
+        font-size: 14px;
+        padding: 4px 8px;
+     
+    }
+    .sub__drop__menu{
+        display: none !important;
+    }
+
+
+    /* banner section  */
+    #banner__section{
+        margin-top: 90px;
+    }
+    .banner__shape{
+        width: 500px;
+        height: 500px;
+    }
+    #banner__section .banner__text h2{
+        font-size: 48px;
+        margin-top: 100px;
+    }
+    #banner__section .banner__text h2 .dynamic__text li{
+        font-size: 42px;
+    }
+    #banner__section .banner__text h2 .dynamic__text{
+        height: auto;
+        line-height: 38px;
+    
+    }
+    #banner__section .banner__text p{
+        font-size: 14px;
+        padding: 0 55px;
+        margin-top: 15px;
+    }
+    #banner__section .banner__text a{
+        font-size: 18px;
+        padding:8px 10px;
+        margin-top:116px;
+    
+    }
+    .a__one {
+        top: 7%;
+        right: -8%;
+    }
+    .a__two{
+        top: 56%;
+    }
+    .a__three {
+        top: 33%;
+        right: -12%;
+    }
+    /* #banner__section .banner__text p::after {
+        bottom: -94px;
+    } */
 
     /* about part */
     #about__section .about__text h6{
