@@ -1,4 +1,33 @@
 
+// portflio part 
+
+$('.bs').click(function(){
+    $(".agency").css("display","none");
+    $(".Education").css("display","none");
+    $(".portfolio").css("display","none");
+    $(".Business").css("display","block");
+
+});
+$('.ED').click(function(){
+    $(".agency").css("display","none");
+    $(".Education").css("display","block");
+    $(".portfolio").css("display","none");
+    $(".Business").css("display","none");
+});
+$('.PO').click(function(){
+    $(".agency").css("display","none");
+    $(".Education").css("display","none");
+    $(".portfolio").css("display","block");
+    $(".Business").css("display","none");
+
+});
+$('.AG').click(function(){
+    $(".agency").css("display","block");
+    $(".Education").css("display","none");
+    $(".portfolio").css("display","none");
+    $(".Business").css("display","none");
+
+});
 
     // =====Pre Loader===== //
      
@@ -79,7 +108,7 @@
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
     }, {
@@ -106,7 +135,7 @@
         arrows: true,
         autoplaySpeed: 1000,
         speed: 1300,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow:'<i class="fas fa-arrow-right next"></i>',
         nextArrow:'<i class="fas fa-arrow-left prev"></i>',
@@ -114,7 +143,7 @@
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
     }, {
@@ -268,3 +297,6 @@ window.addEventListener("load", init)
 		});
 	});
 })(jQuery);
+
+
+
