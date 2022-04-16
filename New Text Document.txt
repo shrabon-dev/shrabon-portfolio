@@ -51,3 +51,30 @@ transition: all .5s ease;
     -o-transform: translate(-50%,-50%);
     content: "";
 }
+
+
+
+@font-face {
+    font-family: amidic;
+    src: url(/fonts/Neon-Regular.woff);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: AlfaBold;
+    src: url(/fonts/Alfa-Bold.woff);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Alfa;
+    src: url(/fonts/Alfa.woff);
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Hanover;
+    src: url(/fonts/Hanover-Regular.woff);
+    font-weight: 100;
+    font-style: normal;
+}

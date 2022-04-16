@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="css/default.css">
   <link rel="stylesheet" href="css/accordion-slider.min.css">
   <link rel="stylesheet" href="css/venobox.min.css">
+  <link rel="stylesheet" href="css/progressBar.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -99,12 +100,12 @@
           </div>
           <div class="menu__bar">
             <ul class="none__menu__bar">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About me</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Testimonial</a></li>
-              <li><a href="#">Blog</a></li>
-              <li class="dropdown__menu"><a href="#">Hire me</a>
+              <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a href="#"> <i class="fa-solid fa-user"></i> About me</a></li>
+              <li><a href="#"> <i class="fas fa-cogs"></i> Services</a></li>
+              <li><a href="#"><i class="fas fa-comment"></i> Testimonial</a></li>
+              <li><a href="#"><i class="fas fa-newspaper"></i> Blog</a></li>
+              <li class="dropdown__menu"><a href="#"> <i class="fab fa-hire-a-helper"></i> Hire me</a>
 
                 <ul class="sub__drop__menu">
                   <li><a href="#">Upwork</a>
@@ -112,7 +113,7 @@
                 </ul>
 
               </li>
-              <li><a href="#">Contact me</a></li>
+              <li><a href="#"> <i class="fas fa-address-card"></i> Contact me</a></li>
             </ul>
           </div>
         </div>
@@ -183,59 +184,29 @@
         <section id="resume__section">
           <div class="container-fluid">
               <div class="title">
-                  <h1>Resume</h1>
-                  <h2>My Skills and Education</h2>
+                  <h1>Skill</h1>
+                  <h2>My Skills and Experience</h2>
               </div>
               <div class="row">
-                  <div class="col-lg-6 col-sm-6 col-md-6 col-xl-6 col-xxl-6">
-                  <h3> <i class="fas fa-user-graduate"></i> Education</h3>
-                    <div class="resume__card">
-                         <span> 2020-2022</span>
-                        <h4>Master of Computer Science</h4>
-                        <h6>Hardverd University</h6>
-                    </div>
-                    <div class="resume__card">
-                      <span> 2017-2020</span>
-                     <h4>Honours of UI/UX Design</h4>
-                     <h6>Cambridge University</h6>
-                 </div>
-                 <div class="resume__card">
-                  <span> 2016-2017</span>
-                 <h4>Higher School Certificate</h4>
-                 <h6>Dhaka College</h6>
-                 </div>
-                 <div class="resume__card">
-                  <span> 2015-2016</span>
-                 <h4>Secondary School Certificate</h4>
-                 <h6>California SG Hight School</h6>
-                 </div>
-                  </div>
-                  <div class="col-lg-6 col-sm-6 col-md-6 col-xl-6 col-xxl-6">
-                      <h3 class="h3_2"><i class="fas fa-briefcase"></i> Job Experience</h3>
-                        <div class="resume__card">
-                             <span> 2020-2022</span>
-                            <h4>Master of Computer Science</h4>
-                            <h6>Hardverd University</h6>
-                        </div>
-                        <div class="resume__card">
-                          <span> 2017-2020</span>
-                         <h4>Honours of UI/UX Design</h4>
-                         <h6>Cambridge University</h6>
-                     </div>
-                     <div class="resume__card">
-                      <span> 2016-2017</span>
-                     <h4>Higher School Certificate</h4>
-                     <h6>Dhaka College</h6>
-                     </div>
-                     <div class="resume__card">
-                      <span> 2015-2016</span>
-                     <h4>Secondary School Certificate</h4>
-                     <h6>California SG Hight School</h6>
-                     </div>
+               <div class="col-lg-12">
+           
+
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="100" data-title="HTML5 / CSS3" data-easing="easeInOutBounce"></div>
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="85" data-title="SASS" data-easing="easeInOutBounce"></div>
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="100" data-title="BOOTSTRAP5" data-easing="easeInOutBounce"></div>
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="85" data-title="JQUERY" data-easing="easeInOutBounce"></div>
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="85" data-title="PHP" data-easing="easeInOutBounce"></div>
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="85" data-title="LARAVEL" data-easing="easeInOutBounce"></div>
+                <div class="ab-progress" data-progress data-tooltip="true" data-duration="10000" data-value="85" data-title="MYSQL or SQL" data-easing="easeInOutBounce"></div>
                       
-                      
-                  </div>
-              </div>
+                          <div class="download">
+                            <button> <i class="fa-solid fa-download"></i> Download CV</button>
+                          </div>
+               </div>
+               </div>
+               
+
+   
           </div>
          </section>
         <!-- =================skill Section End===================== -->
@@ -243,46 +214,44 @@
         <section id="services__section">
           <div class="container-fluid">
             <h5>My Services</h5>
-            <div class="row">
-              <div class="col-lg-3 col-sm-6">
-                <div class="svc">
-                  <div class="svc-img"><img src="images/services/004-responsive-design.png" alt="004-responsive-design.png"></div>
-                  <div class="svc-txt">
-                    <h6>Responsive Website</h6>
-                    <a href="#"><i class="fas fa-arrow-right"></i></a>
+              <div class="service_shape">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="svc">
+                      <div class="svc-img"><img src="images/services/004-responsive-design.png" alt="004-responsive-design.png"></div>
+                      <div class="svc-txt">
+                        <h6>Responsive Website</h6>
+                      </div>
+                    </div>
                   </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="svc">
+                      <div class="svc-img"><img src="images/services/002-landing-page.png" alt="002-landing-page.png"></div>
+                      <div class="svc-txt">
+                        <h6>Landing Page</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="svc">
+                      <div class="svc-img"><img src="images/services/003-ecommerce.png" alt="003-ecommerce.png"></div>
+                      <div class="svc-txt">
+                        <h6>E-commerce Website</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="svc">
+                      <div class="svc-img"><img src="images/services/001-signature.png" alt="001-signature.png"></div>
+                      <div class="svc-txt">
+                        <h6>E-mail Signature</h6>
+                      </div>
+                    </div>
+                  </div>
+    
+    
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="svc">
-                  <div class="svc-img"><img src="images/services/002-landing-page.png" alt="002-landing-page.png"></div>
-                  <div class="svc-txt">
-                    <h6>Landing Page</h6>
-                    <a href="#"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="svc">
-                  <div class="svc-img"><img src="images/services/003-ecommerce.png" alt="003-ecommerce.png"></div>
-                  <div class="svc-txt">
-                    <h6>E-commerce Website</h6>
-                    <a href="#"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="svc">
-                  <div class="svc-img"><img src="images/services/001-signature.png" alt="001-signature.png"></div>
-                  <div class="svc-txt">
-                    <h6>E-mail Signature</h6>
-                    <a href="#"><i class="fas fa-arrow-right"></i></a>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
           </div>
           <div class="container-fluid">
             <h5>Select Your Price Plane</h5>
@@ -341,9 +310,10 @@
         <!-- =================services Section End===================== -->
         <!-- ================= portfolio Section Start=================== -->
         <section id="portfolio__section">
-          <div class="port__title">
+          <div class="port__title element">
             My Portfolio
           </div>
+      
           <div class="nabs__tabs">
             <ul>
               <li>Favourite</li>
@@ -724,27 +694,33 @@
   </div>
 
 
-
+  <div class="wrapper">
+    <h1>stagger from end</h1>
+  </div>
 
 
   <!-- =================Header Section Start=================== -->
   <!-- =================Header Section End===================== -->
   <!-- =================Header Section Start=================== -->
   <!-- =================Header Section End===================== -->
-
-
 
 
   <!-- JS here -->
-
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/noframework.waypoints.min.js"></script>
+  <script src="js/progressBar.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/TxtAnime-min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
   <script src="js/venobox.min.js"></script>
+
   <script src="js/script.js"></script>
+ 
 
 </body>
 
