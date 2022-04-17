@@ -8,18 +8,28 @@
         background: transparent !important;
         z-index: 10000;
     }
-    .d-flex{
-        justify-content: space-around;
-        padding: 15px 0;
+    .sm-d-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .side__menu .logo{
         background: #353743;
     }
     .side__menu .logo .pfl__img{
-        width: auto;
+        width: 60px;
+        height: 60px;
+        margin-left: -38px;
+        margin-top: 5px;
+    }
+    .side__menu .logo .pfl__img a img{
+        width: 60px;
+        height: 60px;
+        display: block;
     }
     .side__menu .logo h2{
         font-size: 14px;
+        margin-top: 0;
     }
     .side__menu .logo span{
         display: inline-block;
@@ -82,19 +92,14 @@
     }
     .banner__shape{
         width: 86vw;
-        height: 54vh;
+        height: 80vh;
     }
     #banner__section .banner__text h2{
         font-size: 22px;
         margin-top: 50px;
     }
-    #banner__section .banner__text h2 .dynamic__text li{
-        font-size: 22px;
-    }
-    #banner__section .banner__text h2 .dynamic__text{
-        height: auto;
-        line-height: 38px;
-    
+    #banner__section .banner__text h2 span {
+        font-size: 16px;
     }
     #banner__section .banner__text p{
         font-size: 12px;
@@ -107,7 +112,7 @@
     
     }
     .a__one {
-        top: -42px;
+        top: 5px;
         right: -16%;
     }
     .a__two{
@@ -133,24 +138,34 @@
         margin-top: 45px;
     }
     #resume__section .title h1{
-        font-size: 40px;
+        font-size: 22px;
     }
     #services__section h5{
-        font-size: 40px;
+        font-size: 22px;
         margin-top: 0;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
+        line-height: 1.5;
     }
     #services__section .service{
         margin-bottom: 30px;
     }
-    #portfolio__section .nabs__tabs ul li{
+    #portfolio__section .port__title{
         font-size: 22px;
     }
+    #portfolio__section .nabs__tabs ul {
+        padding: 0;
+        text-align: left;
+    }
+    #portfolio__section .nabs__tabs ul li{
+        font-size: 12px;
+        padding: 5px 8px;
+    }
     .testimonial-section h1{
-       font-size: 40px;
+       font-size: 22px;
     }
     .testimonial-section h1 span{
         width: auto;
+        font-size: 10px;
     }
     #getintouch__section .get__in__touch p{
         font-size: 16px;
@@ -162,7 +177,18 @@
     footer .text__ftr p{
         padding: 0 0;
     }
+    .milston__right::after{
+        width: 300px;
+        height: 300px;
+    }
+    .milston__right::before{
+        width: 200px;
+        height: 200px;
 
+    }
+    .testimonial-section .testimonial{
+        width: 100%;
+    }
 }
 
 /* ---------------------- Tablet device ------------------------ */
@@ -183,10 +209,19 @@
         background: #353743;
     }
     .side__menu .logo .pfl__img{
-        width: auto;
+        width: 80px;
+        height: 80px;
+        margin-left: -38px;
+        margin-top: 5px;
+    }
+    .side__menu .logo .pfl__img a img{
+        width: 80px;
+        height: 80px;
+        display: block;
     }
     .side__menu .logo h2{
-        font-size: 34px;
+        font-size: 22px;
+        margin-top: 0;
     }
     .side__menu .logo span{
         display: inline-block;
@@ -210,6 +245,11 @@
         -ms-transition: .6s all ease-in-out;
         -o-transition: .6s all ease-in-out;
     
+    }
+    .sm-d-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .active__menu__bar{
         left: 0 !important;
@@ -342,7 +382,18 @@
     footer .text__ftr a{
         margin-top: 25px;
     }
+    .milston__right::after{
+        width: 576px;
+        height: 576px;
+    }
+    .milston__right::before{
+        width: 450px;
+        height: 450px;
 
+    }
+    .testimonial-section .testimonial{
+        width: 100%;
+    }
 }
 
 /* ---------------------- laptop device ------------------------ */
@@ -363,10 +414,19 @@
         background: #353743;
     }
     .side__menu .logo .pfl__img{
-        width: auto;
+        width: 140px;
+        height: 140px;
+        margin-left: -38px;
+        margin-top: 5px;
+    }
+    .side__menu .logo .pfl__img a img{
+        width: 140px;
+        height: 140px;
+        display: block;
     }
     .side__menu .logo h2{
         font-size: 34px;
+        margin-top: 0;
     }
     .side__menu .logo span{
         display: inline-block;
@@ -390,6 +450,11 @@
         -ms-transition: .6s all ease-in-out;
         -o-transition: .6s all ease-in-out;
     
+    }
+    .sm-d-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     .active__menu__bar{
         left: 0 !important;
