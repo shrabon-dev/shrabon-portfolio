@@ -1091,8 +1091,9 @@ button:focus {
   font-weight: 200;
   color: #e7e7e7 !important;
   padding-left: 8px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid #2b4a79;
   margin-bottom: 25px;
+  border-top: none;
 
 }
 #getintouch__section .get__in__touch textarea{
@@ -1106,9 +1107,9 @@ button:focus {
     color: #e7e7e7 !important;
     padding-left: 8px;
     padding-top: 10px;
-    border: 1px solid #e7e7e7;
+    border: 1px solid #2b4a79;
     resize: none;
-  
+    border-top: none;
   }
 ::placeholder{
     font-family: 'Poppins', sans-serif;
@@ -1267,13 +1268,12 @@ input:focus,textarea:focus{
     padding: 50px 0 100px 0;
 }
 .testimonial-section .testimonial{
-    width: 50%;
+    width: 70%;
     background: #2A2C39;
     border: 1px solid transparent;
     margin: auto;
     position: relative;
     padding: 25px;
-    padding-top: 60px;
     text-align: center;
     transition: .4s all ease;
     -webkit-transition: .4s all ease;
