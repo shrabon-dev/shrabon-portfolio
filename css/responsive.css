@@ -189,6 +189,9 @@
     .testimonial-section .testimonial{
         width: 100%;
     }
+    #getintouch__section .map ul li {
+        font-size: 11px;
+    }
 }
 
 /* ---------------------- Tablet device ------------------------ */

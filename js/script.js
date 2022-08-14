@@ -1,3 +1,17 @@
+// mode change 
+
+$(".light_mode").click(function(){
+    $(".style").attr("href","css/style_blue_mode.css")
+    $(this).css("display","none");
+    $(".dark_mode").css("display","block");
+})
+$(".dark_mode").click(function(){
+    $(".style").attr("href","css/style.css");
+    $(this).css("display","none");
+    $(".light_mode").css("display","block");
+
+})
+
 
 // portflio part 
 
@@ -28,6 +42,9 @@ $('.AG').click(function(){
     $(".Business").css("display","none");
 
 });
+
+
+
 
     // =====Pre Loader===== //
      

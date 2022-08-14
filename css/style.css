@@ -688,35 +688,99 @@ button:focus {
     -ms-transform: skewX(0deg);
     -o-transform: skewX(0deg);
 }
-
+.skill_part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 55%;
+    flex-wrap: wrap;
+    -webkit-flex-basis: 55%;
+}
+.skill_part .skill{
+    width: 90px;
+    height: 90px;
+   margin-bottom: 45px;
+   display: inline-block;
+   background: #2A2C39;
+   border: 2px solid #484953;
+   border-radius: 50%;
+   padding: 20px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+.skill_part .skill img{
+    width: 70px;
+}
 /* 5.-------------------------------------------
                     Services Section
 -----------------------------------------------*/
 #services__section{
     padding: 40px 0 80px 0;
 }
+.service_shape{
+    margin-bottom: 150px;
+}
 #services__section .svc{
-    width: 180px;
-    height: 180px;
+    background: linear-gradient(9deg,  rgba(53,55,67,1) 30%,rgba(53,55,67,0.3) 100%);
+    width: 280px;
+    height: 200px;
     padding: 15px;
     transition: .4s;
     -webkit-transition: .4s;
     -moz-transition: .4s;
     -ms-transition: .4s;
     -o-transition: .4s;
-    box-shadow: 0px -1px 5px 0px #44444400;
     cursor: pointer;
-    background: #484a57;
     text-align: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     border: 1px solid #353743;
+    /* border-right: none; */
+    margin-bottom: 50px;
+    position: relative;
 }
-#services__section .svc:hover{
-    background: #3d4050;
+#services__section .svc::after{
+    position: absolute;
+    background: #3d4052;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -1;
+    transform-origin: center;
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+    transition-delay: .1s;
+}
+#services__section .svc::before{
+    position: absolute;
+    background: #656980;
+    width: 0%;
+    height: 0%;
+    bottom: 0;
+    right: 0;
+    content: '';
+    z-index: -2;
+    transform-origin: center;
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+}
+#services__section .svc:hover:after{
+    width: 95%;
+    height: 95%;
+    border-top-left-radius: 150px;
+}
+#services__section .svc:hover:before{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 150px;
 }
 #services__section .svc .svc-txt{
     padding: 5px;
@@ -724,16 +788,24 @@ button:focus {
 }
 #services__section .svc .svc-txt h6{
     font-family: amidic;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     color: #eeeeee;
-    margin-top: 18px;
-    line-height: 1.5;
+    margin-top: 25px;
    
+    
+}
+#services__section .svc:hover .svc-txt h6{
+    background: linear-gradient(9deg,  rgba(53,55,67,0.8) 100%,rgba(53,55,67,.1) 30%);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
 }
 #services__section .svc .svc-img{
-   width: 60px;
-   height: 60px;
+   width: 100px;
+   height: 100px;
    overflow: hidden;
    transform: scale(1);
    -webkit-transform: scale(1);
@@ -754,6 +826,7 @@ button:focus {
 }
 
 #services__section .service{
+    background: linear-gradient(9deg,  rgba(53,55,67,1) 30%,rgba(53,55,67,0.3) 100%);
     text-align: center;
     padding: 25px 5px;
     /* box-shadow: 0px 0px 3px 0px #202020; */
@@ -792,8 +865,16 @@ button:focus {
     width: 60%;
 }
 #services__section .service:hover{
-    background:#3d4052;
+    background: linear-gradient(9deg,  rgba(53,55,67,0.5) 100%,rgba(53,55,67,.5) 50%);
+
 }
+/* #services__section .service:nth-child(even){
+    background: linear-gradient(9deg,  rgba(53,55,67,0.3) 100%,rgba(53,55,67,1) 30%);
+}
+#services__section .service:nth-child(even):hover{
+    background: linear-gradient(9deg, rgba(53,55,67,1) 30%, rgba(53,55,67,0.3) 100%);
+
+} */
 #services__section h5{
     font-family: Alfa;
     font-size: 44px;
@@ -802,7 +883,7 @@ button:focus {
     text-align: center;
     letter-spacing: 5px;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 #services__section .service h2{
     font-family: 'Poppins', sans-serif;
@@ -873,38 +954,13 @@ button:focus {
     -o-transform: skewX(0deg);
 }
 
-.service_shape{
-    background: #3537439a;
-    padding: 80px;
-    position: relative;
-    z-index: 1;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
-    margin-bottom: 150px;
-}
-.service_shape::after{
-    background: #3f424e;
-    position: absolute;
-    width: 90%;
-    height: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    content: "";
-    z-index: -1;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
+
+
 /* 7.-------------------------------------------
                     portfolio Section
 -----------------------------------------------*/
 #portfolio__section{
     padding: 80px 0;
-    margin-bottom: 50px;
 }
  #portfolio__section .port__title{
     font-family: AlfaBold;
@@ -1059,11 +1115,19 @@ button:focus {
 #getintouch__section .get__in__touch {
     padding-left: 25px;
     padding-top: 55px;
-    background: url(../images/getintouch/getin.png) no-repeat left;
+    /* background: url(../images/getintouch/getin.png) no-repeat left; */
     margin: 50px 0;
     padding-bottom: 50px;
+    background: #2A2C39;
 
 }
+#getintouch__section .map{
+    background: #2A2C39;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+
 #getintouch__section .get__in__touch h6{
     font-family: AlfaBold;
     font-size: 44px;
@@ -1079,10 +1143,10 @@ button:focus {
     margin-top: 5px;
 }
 #getintouch__section .get__in__touch form{
-    width: 50%;
+    width: 75%;
 }
 #getintouch__section .get__in__touch input{
-  width: 90%;
+  width: 130%;
   height: 40px;
   background: transparent;
   border: none;
@@ -1091,13 +1155,12 @@ button:focus {
   font-weight: 200;
   color: #e7e7e7 !important;
   padding-left: 8px;
-  border: 1px solid #2b4a79;
+  border-bottom: 1px solid #3c3f53;
   margin-bottom: 25px;
-  border-top: none;
 
 }
 #getintouch__section .get__in__touch textarea{
-    width: 90%;
+    width: 130%;
     height: 140px;
     background: transparent;
     border: none;
@@ -1107,9 +1170,8 @@ button:focus {
     color: #e7e7e7 !important;
     padding-left: 8px;
     padding-top: 10px;
-    border: 1px solid #2b4a79;
+    border-bottom: 1px solid #3c3f53;
     resize: none;
-    border-top: none;
   }
 ::placeholder{
     font-family: 'Poppins', sans-serif;
@@ -1166,6 +1228,14 @@ input:focus,textarea:focus{
     outline: none;
     box-shadow: none;
 }
+
+#getintouch__section .map iframe{
+    width: 100%;
+    height: 300px;
+}
+
+
+
 .milston__right{
     padding: 120px 20px 40px;
     /* background: linear-gradient(#0D7377;,#b11050); */
@@ -1261,6 +1331,31 @@ input:focus,textarea:focus{
     font-weight: 300;
     color: #869da0 !important;
 }
+#getintouch__section .map h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #eeeeee !important;
+    margin-top: 102px;
+    margin-bottom: 20px;
+}
+#getintouch__section .map ul li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e0e0e0 !important;
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 8px;
+}
+#getintouch__section .map ul li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#getintouch__section .map ul li a{
+    color: #fdfdfd !important;
+}
 /* 9.-------------------------------------------
                     testimonial Section
 -----------------------------------------------*/
@@ -1344,8 +1439,8 @@ input:focus,textarea:focus{
     font-weight: 200;
     color: #ffffff;
     text-align: center;
-    padding-bottom: 90px;
-    margin-top: 100px;
+    padding-bottom: 40px;
+    margin-top: 120px;
 }
 .testimonial-section h1 span{
     font-family: amidic;
@@ -1449,6 +1544,75 @@ input:focus,textarea:focus{
     width: 150% !important;
     height: 150% !important;
 }
+
+
+/* 9.-------------------------------------------
+                    Hire me Section
+-----------------------------------------------*/
+#hire_section_part{
+    padding: 0 0 150px 0;
+}
+#hire_section_part .hire_upwork{
+    background: linear-gradient(9deg, rgba(53,55,67,0.4) 4%, rgba(53,55,67,0.9) 100%);
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+    margin-bottom: 20px;
+    border: 1px solid #353743;
+}
+#hire_section_part .hire_upwork:hover{
+    background: linear-gradient(9deg,  rgba(53,55,67,1) 30%,rgba(53,55,67,0.3) 100%);
+  
+}
+#hire_section_part .hire_upwork .hire_img{
+     width: 120px;
+     height: 120px;
+     background: linear-gradient(9deg,  rgba(53,55,67,01) 100%,rgba(53,55,67,0.2) 4%);
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+     transition: .4s all ease-in-out;
+     -webkit-transition: .4s all ease-in-out;
+     -moz-transition: .4s all ease-in-out;
+     -ms-transition: .4s all ease-in-out;
+     -o-transition: .4s all ease-in-out;
+     border: 1px solid #4d4f5f;
+}
+#hire_section_part .hire_upwork:hover .hire_img{
+    background: linear-gradient(9deg, rgba(53,55,67,0.4) 4%, rgba(53,55,67,0.9) 100%);
+}
+#hire_section_part .hire_upwork .hire_img img{
+    width: 100px;
+    display: block;
+}
+#hire_section_part .hire_upwork .hire_me a{
+    font-family: amidic;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 20px;
+    transition: .4s all ease-in-out;
+    -webkit-transition: .4s all ease-in-out;
+    -moz-transition: .4s all ease-in-out;
+    -ms-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+}
+#hire_section_part .hire_upwork .hire_me a:hover{
+    color: #E0A69C;
+}
+
+
 /* 9.-------------------------------------------
                     footer Section
 -----------------------------------------------*/
@@ -1634,4 +1798,34 @@ footer .ul2 li a:hover{
 footer .ul2 li a:hover:after{
     width: 150% !important;
     height: 150% !important;
+}
+.mode_change{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+    z-index: 99999;
+}
+.dark_mode{
+    background: #3f424e;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 #8a8a8a41;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+.light_mode{
+    background: #3f424e;
+    padding: 10px;
+    box-shadow: 0 0 20px 0 #8a8a8a41;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
 }
